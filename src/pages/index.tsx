@@ -29,8 +29,8 @@ import { motion } from "framer-motion";
 
 const aboutStats = [
   { label: "Years of experience", value: "3+" },
-  { label: "Technologies mastered", value: "5+" },
-  { label: "Companies worked with", value: "15+" },
+  { label: "Technologies mastered", value: "50+" },
+  { label: "Companies worked with", value: "3+" },
 ];
 
 const projects = [
@@ -240,44 +240,32 @@ export default function Home() {
 
         {/* About */}
         <section id="about" data-scroll-section>
-          <div
-            data-scroll
-            data-scroll-speed=".4"
-            data-scroll-position="top"
-            className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
-          >
-            <h2 className="py-16  pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
-              I&apos;m an experienced full-stack developer proficient in{" "}
-              <Link
-                href="https://create.t3.gg/"
-                target="_blank"
-                className="underline"
-              >
-                TypeScript, Tailwind, and Next.js
-              </Link>{" "}
-              since 2021. My experience spans from startups to mid-sized
-              companies, where I&apos;ve been instrumental in the entire product
-              design process; from ideation and wireframing, through
-              prototyping, to the delivery of the final product, all while
-              efficiently collaborating with cross-functional teams.
-            </h2>
-            <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
-              {aboutStats.map((stat) => (
-                <div
-                  key={stat.label}
-                  className="flex flex-col items-center text-center xl:items-start xl:text-start"
-                >
-                  <span className="clash-grotesk text-gradient text-4xl font-semibold tracking-tight xl:text-6xl">
-                    {stat.value}
-                  </span>
-                  <span className="tracking-tight text-muted-foreground xl:text-lg">
-                    {stat.label}
-                  </span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+  <div
+    data-scroll
+    data-scroll-speed=".4"
+    data-scroll-position="top"
+    className="my-14 flex max-w-6xl flex-col justify-start space-y-10"
+  >
+    <h2 className="py-16 pb-2 text-3xl font-light leading-normal tracking-tighter text-foreground xl:text-[40px]">
+      Welcome to Cypernox! We are a leading software development company dedicated to providing innovative business solutions. Since our inception, we have partnered with businesses of all sizes—from startups to established enterprises—to help them achieve sustainable growth and transform their digital presence. Our expertise spans from product design and prototyping to the final delivery of scalable solutions, ensuring a seamless experience for our clients.
+    </h2>
+    <div className="grid grid-cols-2 gap-8 xl:grid-cols-3">
+      {aboutStats.map((stat) => (
+        <div
+          key={stat.label}
+          className="flex flex-col items-center text-center xl:items-start xl:text-start"
+        >
+          <span className="clash-grotesk text-gradient text-4xl font-semibold tracking-tight xl:text-6xl">
+            {stat.value}
+          </span>
+          <span className="tracking-tight text-muted-foreground xl:text-lg">
+            {stat.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
 
         {/* Projects */}
         <section id="projects" data-scroll-section>
